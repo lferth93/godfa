@@ -27,3 +27,12 @@ $godfa -i example.nfa -o salida.dfa
 
 ## Salida
 La salida del programa sera un archivo de texto plano con la descripcion del DFA equivalente al NFA de entrada siguiendo la misma sintaxis que el archivo de entrada.
+
+## Archivos
+El proyecto esta separado en diferentes archivos y cada uno tiene la siguiente funcion.
+* ``bitset.go`` contiene la implementacion de la estrutura de datos bitset.
+* ``dfa.go`` contiene la descripcion de la estrutura dfa , el codigo para convertir el nfa de entrada y el codigo para generar la salida del programa.
+* ``example.nfa`` es un archivo un ejemplo de archivo de entrada para el programa.
+* ``hashset`` contiene la implementacion de la estructura hashset.
+* ``main.go`` contiene funcion main del programa y lo necesario para leer los atributos de la ejecucion del programa
+* ``nfa.go`` contiene la implementacion de la estructura nfa, el codigo para leer el archivo de entrada y crear una representacion del nfa.  
