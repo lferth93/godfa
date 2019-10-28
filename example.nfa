@@ -1,0 +1,19 @@
+#NFA example for (0|1)^*1(0|1)^3
+#States
+q0, q1, q2, q3, q4
+
+#Alphabet
+0, 1
+
+#Start state
+q0
+
+#Final states
+q4
+
+#Delta
+#s  0   1
+q0, q0, q0 q1
+q1, q2, q2
+q2, q3, q3
+q3, q4, q4
