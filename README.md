@@ -1,7 +1,7 @@
-# GoDFa
-GoDFA es un programa escrito en go para convertir un automata finito no determinista(NFA) a un automata finito determinista(DFA).
+# GoDFA
+GoDFA es un programa escrito en go para convertir un automata finito no determinista(NFA) a un automata finito determinista(DFA) equivalente.
 
-## Sintaxis
+## Entrada
 El programa recibe un archivo de texto plano con la descripcion del NFA, la sintaxis del archivo es la siguiente.
 * Todas las lineas en blanco y lineas que comiencen con el simbolo '#' seran ignoradas.
 1. La primera linea debera contener los estados del automata separados por ','.
@@ -14,16 +14,16 @@ El programa recibe un archivo de texto plano con la descripcion del NFA, la sint
     * Si la trancicion de un estado con un simbolo es vacia esta se puede indicar con el simbolo '_' o simplemente con espacios en blanco.
 
 ## Compilacion 
-El programa fue escrito usando la version 13.3 de [Go](https://golang.org/), para compilar el programa se requiere un compilador compatible con esta version y ejecutar el siguiente comando dentro de la raiz del proyecto.
+El programa fue escrito usando la version 13.3 de [Go](https://golang.org/), para compilar el programa se requiere un compilador de este lenguaje compatible con esta version y ejecutar el siguiente comando dentro de la raiz del proyecto, esto producira un ejecutable llamado ``godfa``.
 ```` shell
 $go build
 ````
 
 ## Ejecucion
-Para ejecutar el programa se requiere indicar el archivo de entrada y salida para el programa usando los atributos -i y -o, por ejemplo.
+Para ejecutar el programa se requiere indicar el archivo de entrada y salida para el programa usando los atributos ``-i`` y ``-o``, por ejemplo.
 ````shell
 $godfa -i example.nfa -o salida.dfa
 ````
 
-# Salida
+## Salida
 La salida del programa sera un archivo de texto plano con la descripcion del DFA equivalente al NFA de entrada siguiendo la misma sintaxis que el archivo de entrada.
